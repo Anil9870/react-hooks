@@ -1,21 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
+import UseRef from './comonents/UseRef';
+import UseState from './comonents/UseState';
 
 const App = () => {
-  const [mail, setMail] = useState('');
-  const [mailHistory, setMailHistory] = useState([]);
   return (
-    <div>
-      <input
-        onChange={(e) => {
-          setMail(e.target.value);
-          setMailHistory([...mailHistory, mail]);
-        }}
-      />
-      <br />
-      {mail}
-      <h3>History</h3>
-      <br />
-      {mailHistory.map((mailItem) => { return <div>{mailItem}</div> })}
+    <div className="container">
+       <div className="row">
+          <h3>USE STATE</h3>
+          <UseState/>
+       </div>
+       <div className="row">
+         <h3>USE REF</h3>
+         <UseRef/>
+       </div>
     </div>
   )
 }
