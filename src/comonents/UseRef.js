@@ -9,9 +9,11 @@ const UseRef = () => {
             ref={imgRef}
             onMouseOver={ () => {
                 imgRef.current.src="images/pic2.jpg";
+                console.log(imgRef.current);
             }}
             onMouseOut={()=>{
                 imgRef.current.src="images/pic1.jpg";
+                console.log(imgRef.current);
             }}
             />
         </div>
