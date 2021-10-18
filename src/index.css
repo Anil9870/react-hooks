@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.image-space {
+  width: 600px;
+  height: 600px;
+  /* object-fit: cover; */
+  /* object-fit: contain; */
+  object-fit: fill;
+}
+
+.button-container {
+  height: 100px;
+  position: relative;
+}
+
+.position-center {
+  position: absolute;
+  top: 33%;
+  margin-left: 43%;
+}
+
+.tab-text {
+  display: inline-block;
+}
